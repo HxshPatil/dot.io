@@ -24,11 +24,14 @@ const RandomPoints = ({ numberOfPoints, width, height, axisColor, pointSize }) =
       {points.map(({ x, y }, index) => {
         const rad = Math.sqrt(Math.pow(x - width / 2, 2) + Math.pow(y - height / 2, 2));
         return (
-          <circle
+          <circle className='dot'
             key={index}
             cx={x}
             cy={y}
             r={pointSize}
+            style={{
+                animationDelay: `${index * 0.1}s`,
+            }}
             fill={rad < 200 ? 'red' : 'blue'}
           />
         );
