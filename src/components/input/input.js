@@ -28,8 +28,7 @@ const PositiveNumberButton = ({ onNumberSubmit, onReset }) => {
 
   return (
     <div className='input-btn'>
-      <label>
-        <div>Enter a positive number:</div>
+      <label>Enter a positive number:
         <input
           type="text"
           value={inputValue}
