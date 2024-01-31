@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import CoordinateSystem from './components/coordinate_system/coordinate_system';
 
 function App() {
